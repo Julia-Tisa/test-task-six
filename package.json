@@ -1,0 +1,91 @@
+{
+  "name": "front-test-app",
+  "version": "0.0.1",
+  "description": "operator front app",
+  "private": true,
+  "author": "cartech team",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"There is no build here\" && exit 1",
+    "dev": "nodemon dev-server/index.js & webpack serve --config client/builder/webpack/dev.js",
+    "dev:api": "nodemon babel-cli dev-server/index.js",
+    "dev:web": "webpack serve --config client/builder/webpack/dev.js --hot",
+    "lint": "eslint ./client/src --ext .jsx --ext .js",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "carprice",
+    "test"
+  ],
+  "config": {
+    "commit-message-validator": {
+      "pattern": "^(.+\\s\\|\\s)?(fix|feat|build|ci|chore|docs|perf|refactor|revert|style|test)(\\(.+\\))?:\\s.*",
+      "errorMessage": "================= \n Коммит не соответствует шаблону! \n\n ПРИМЕР: style(Header): изменил паддинги \n МОЖНО БЕЗ SCOPE: feat: сверстал кнопочку \n\n Типы изменений: \n fix - исправление ошибок \n build - настройки сборки и зависимостей \n ci - Changes to our CI configuration files and scripts \n chore - Other changes that don't modify src or test files \n docs - Documentation only changes \n feat - A new feature \n perf - A code change that improves performance \n refactor - A code change that neither fixes a bug nor adds a featur \n revert - Reverts a previous commit \n style - Changes that do not affect the meaning of the code \n test - Adding missing tests or correcting existing tests \n\n Для отмены валидации добавить: --no-verify \n================="
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@fontsource/roboto": "^4.5.3",
+    "@mui/icons-material": "^5.4.1",
+    "@mui/material": "^5.4.1",
+    "@mui/styles": "^5.4.1",
+    "axios": "^0.25.0",
+    "body-parser": "^1.19.1",
+    "classnames": "^2.3.1",
+    "core-js": "^3.21.0",
+    "date-fns": "^2.28.0",
+    "express": "^4.17.2",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-number-format": "^4.9.1",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.1",
+    "redux": "^4.1.2",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.4.1",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.3",
+    "browserlist": "^1.0.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "commit-message-validator": "^1.0.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.3",
+    "nodemon": "^2.0.15",
+    "nodemon-webpack-plugin": "^4.7.1",
+    "silver-commit": "^0.1.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.68.0",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
+  }
+}

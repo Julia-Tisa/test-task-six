@@ -1,0 +1,49 @@
+{
+    "auctions": [
+        {
+            "title": "Bugatti Veyron",
+            "id": 0,
+            "imgUrl": "/images/car-1.jpg"
+        },
+        {
+            "title": "ВАЗ 2101",
+            "id": 1,
+            "imgUrl": "/images/car-2.jpg"
+        },
+        {
+            "title": "Mercedes-AMG GT",
+            "id": 2,
+            "imgUrl": "/images/car-3.jpg"
+        },
+        {
+            "title": "Ferves Ranger",
+            "id": 3,
+            "imgUrl": "/images/car-4.jpg"
+        },
+        {
+            "title": "Mercedes-Benz G-класс",
+            "id": 4,
+            "imgUrl": "/images/car-5.jpg"
+        },
+        {
+            "title": "Modified Audi",
+            "id": 5,
+            "imgUrl": "/images/car-6.jpg"
+        },
+        {
+            "title": "Bugatti Veyron Super Sport",
+            "id": 6,
+            "imgUrl": "/images/car-7.jpg"
+        },
+        {
+            "title": "Audi RS7",
+            "id": 7,
+            "imgUrl": "/images/car-8.jpg"
+        },
+        {
+            "title": "BMW3 Series G20",
+            "id": 8,
+            "imgUrl": "/images/car-9.jpg"
+        }
+    ]
+}
