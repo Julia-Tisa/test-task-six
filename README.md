@@ -63,10 +63,10 @@ GET: `/api/auction/:auctionId` возвращает информацию об о
 
 Список аукционов
 
-![auctions_sample](https://user-images.githubusercontent.com/68642210/153865143-adf5a83a-dc48-4350-afd9-58f6f31fa074.jpg)
+![auctions_sample](./samples/auctions_fact.png)
 
  Страница отдельного аукциона:
 
-![details_sample](https://user-images.githubusercontent.com/68642210/153865147-692885a0-e215-4fc8-80bc-b85491925280.jpg)
+![details_sample](./samples/details_fact.png)
 
 Изображения с примерами верстки находятся в папке samples
