@@ -6,9 +6,9 @@ import {
   Card,
   CardMedia,
   CardContent,
-  CircularProgress,
   Typography,
 } from '@mui/material';
+import Loader from './Loader';
 
 function CarPage() {
   const { id } = useParams();
@@ -24,14 +24,7 @@ function CarPage() {
   }, [id]);
 
   if (!carState) {
-    return (
-      <Box sx={{
-        display: 'flex', justifyContent: 'center', alignItems: 'center', height: '70vh',
-      }}
-      >
-        <CircularProgress size={140} />
-      </Box>
-    );
+    return <Loader />;
   }
 
   const { title, imgUrl, mileage } = carState.auction;

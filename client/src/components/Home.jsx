@@ -2,7 +2,6 @@ import {
   Alert,
   AlertTitle,
   Box,
-  CircularProgress,
   Grid,
   Typography,
 } from '@mui/material';
@@ -12,6 +11,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { uniqueId } from 'lodash';
 import CarCard from './CarCard';
+import Loader from './Loader';
 import SearchInput from './SearchInput';
 import { setIsLoading, setData, setError } from '../actions';
 
@@ -76,14 +76,7 @@ function Home() {
   }
 
   if (!isLoading) {
-    return (
-      <Box sx={{
-        display: 'flex', justifyContent: 'center', alignItems: 'center', height: '70vh',
-      }}
-      >
-        <CircularProgress size={140} />
-      </Box>
-    );
+    return <Loader />;
   }
 
   return (
