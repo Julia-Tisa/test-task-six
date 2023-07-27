@@ -25,17 +25,17 @@
 
 ## Установка
 
-`yarn install`
+`npm install`
 
 ## Запуск
 
-`yarn dev`
+`npm dev`
 
 ## Запуск отдельно api и web-server
 
-`yarn dev:api` запуск локального сервера на localhost:3000
+`npm dev:api` запуск локального сервера на localhost:3000
 
-`yarn dev:web` запуск dev сервера webpack на localhost:8080
+`npm dev:web` запуск dev сервера webpack на localhost:8080
 
 ## API
 
