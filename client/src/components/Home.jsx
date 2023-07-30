@@ -9,7 +9,6 @@ import axios from 'axios';
 import { useState, useEffect, memo } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { uniqueId } from 'lodash';
 import CarCard from './CarCard';
 import Loader from './Loader';
 import SearchInput from './SearchInput';
@@ -86,7 +85,7 @@ function Home() {
         <Grid container spacing={1}>
           {data.auctions.length > 0
             ? data.auctions.map((car) => (
-              <Grid item xs={12} sm={6} md={4} key={uniqueId()}>
+              <Grid item xs={12} sm={6} md={4} key={car.id}>
                 <Link style={{ textDecoration: 'none' }} to={`/car/${car.id}`}>
                   <MemoizedCarCard
                     title={car.title}
